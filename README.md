@@ -1,12 +1,24 @@
-# Securing-Privacy-in-MQTT-based-Systems
-Design and implement a privacy-enhanced MQTT-based messaging system for disaster scenarios involving victims, drones (brokers), and a Command &amp; Control (C2) system. Identify privacy threats using LINDDUN and apply Privacy-Enhancing Technologies (PETs).
-  
+# MQTT Privacy-Enhanced Disaster Communication System  
+*A project implementing Privacy-Enhancing Technologies (PETs) for secure messaging in calamity scenarios.*  
 
-## Setup  
-1. Install Mosquitto: `sudo apt install mosquitto`  
-2. Run `python c2_subscriber.py` (C2 server)  
-3. Run `python victim_publisher.py` (victim client)  
+##  Overview  
+This project simulates an MQTT-based communication system between victims and a Command & Control (C2) center during disasters. It demonstrates:  
+- **Baseline (Insecure) Implementation**: Plaintext messaging with no privacy protections.  
+- **Privacy-Enhanced Implementation**: Pseudonymization, data minimization, and encryption using XOR.  
 
-## Privacy Enhancements  
-- **Pseudonymization:** Victims use random IDs.  
-- **Data Minimization:** Locations generalized to sectors.  
+##  Tools Used  
+- **MQTT Broker**: [Mosquitto](https://mosquitto.org/)  
+- **Python Libraries**: `paho-mqtt`  
+- **Privacy Framework**: LINDDUN  
+
+##  Setup Instructions  
+### Prerequisites  
+1. Install Mosquitto:  
+   ```bash
+   sudo apt-get install mosquitto mosquitto-clients  # Linux
+   brew install mosquitto                            # macOS
+   ```
+2. Install Python dependencies:  
+   ```bash
+   pip install paho-mqtt
+   ```
