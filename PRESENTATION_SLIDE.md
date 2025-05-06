@@ -1,6 +1,6 @@
 # Video Presentation: Securing Privacy in MQTT Systems  
 **Student Name**: Nate Le  
-**YouTube Link**:  
+**YouTube Link**: https://youtu.be/J2qGgauQ_mA
 
 ## Sections Covered  
 1. Problem Introduction  
